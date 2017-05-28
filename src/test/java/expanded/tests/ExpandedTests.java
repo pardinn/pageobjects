@@ -1,16 +1,16 @@
-package tests;
+package expanded.tests;
 
+import expanded.pageobjects.CoursesPage;
+import expanded.pageobjects.LoginPage;
+import expanded.pageobjects.StudentDashboardPage;
+import expanded.pageobjects.WorkingWithElementsCoursePage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pageobjects.CoursesPage;
-import pageobjects.LoginPage;
-import pageobjects.StudentDashboardPage;
-import pageobjects.WorkingWithElementsCoursePage;
 
 /**
  * Created by morae on 27/05/2017.
  */
-public class FirstTests extends BaseTest {
+public class ExpandedTests extends BaseTest {
 
     @Test
     public void test1() {

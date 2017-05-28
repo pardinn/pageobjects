@@ -1,4 +1,4 @@
-package tests;
+package firstlevel.tests;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import org.openqa.selenium.WebDriver;
