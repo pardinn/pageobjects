@@ -8,10 +8,7 @@ import org.openqa.selenium.support.PageFactory;
  */
 public class BasePageObjectRepository {
 
-    private final WebDriver driver;
-
-    public BasePageObjectRepository(WebDriver driver){
-        this.driver = driver;
+    public BasePageObjectRepository(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 /**
  * Created by morae on 28/05/2017.
  */
-public class CoursesPageObjectRepository extends BasePageObjectRepository{
+public class CoursesPageObjectRepository extends BasePageObjectRepository {
     @FindBy(className = "my-account")
     public WebElement signInLink;
 

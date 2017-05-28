@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
  */
 public class WorkingWithElementsCoursePage extends BasePage<WorkingWithElementsCoursePageObjectRepository> {
 
-    public WorkingWithElementsCoursePage(WebDriver driver) {
+    WorkingWithElementsCoursePage(WebDriver driver) {
         super(driver, new WorkingWithElementsCoursePageObjectRepository(driver));
     }
 

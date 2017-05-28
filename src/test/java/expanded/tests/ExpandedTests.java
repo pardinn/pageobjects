@@ -34,33 +34,33 @@ public class ExpandedTests extends BaseTest {
         Assert.assertTrue(userInteractionsCoursePage.isAt(), "The course did not open successfully");
     }
 
-    @Test(description= "Open complicated page and click on first Twitter button")
-    public void test3(){
+    @Test(description = "Open complicated page and click on first Twitter button")
+    public void test3() {
         ComplicatedPage complicatedPage = new ComplicatedPage(driver);
         complicatedPage.goTo();
         Assert.assertTrue(complicatedPage.isAt(), "The complicated page did not open successfully");
 
-        complicatedPage.clickFirstTwitterButton();
+        complicatedPage.socialMediaSection.clickFirstTwitterButton();
         Assert.assertFalse(complicatedPage.isAt());
     }
 
     @Test(description = "Open complicated page and perform a search in Search box")
-    public void test4(){
+    public void test4() {
         ComplicatedPage complicatedPage = new ComplicatedPage(driver);
         complicatedPage.goTo();
         Assert.assertTrue(complicatedPage.isAt(), "The complicated page did not open successfully");
 
-        complicatedPage.search("Selenium");
+        complicatedPage.leftSidebar.search("Selenium");
         Assert.assertFalse(complicatedPage.isAt());
     }
 
     @Test(description = "In complicated page, open toggle and validate it is open")
-    public void test5(){
+    public void test5() {
         ComplicatedPage complicatedPage = new ComplicatedPage(driver);
         complicatedPage.goTo();
         Assert.assertTrue(complicatedPage.isAt(), "The complicated page did not open successfully");
 
-        complicatedPage.openToggle();
-        Assert.assertTrue(complicatedPage.isToggleOpen(), "The toggle did not open successfully");
+        complicatedPage.centerContent.openToggle();
+        Assert.assertTrue(complicatedPage.centerContent.isToggleOpen(), "The toggle did not open successfully");
     }
 }
