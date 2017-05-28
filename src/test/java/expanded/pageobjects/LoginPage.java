@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
  */
 public class LoginPage extends BasePage<LoginPageObjectRepository> {
 
-    public LoginPage(WebDriver driver) {
+    LoginPage(WebDriver driver) {
         super(driver, new LoginPageObjectRepository(driver));
     }
 

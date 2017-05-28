@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
  */
 public class StudentDashboardPage extends BasePage<StudentDashboardPageObjectRepository> {
 
-    public StudentDashboardPage(WebDriver driver) {
+    StudentDashboardPage(WebDriver driver) {
         super(driver, new StudentDashboardPageObjectRepository(driver));
     }
 
