@@ -1,7 +1,7 @@
 package firstlevel.pageobjects;
 
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -27,7 +27,7 @@ public class WorkingWithElementsCoursePage {
         try {
             WebDriverWait wait = new WebDriverWait(driver, 30);
             wait.until(ExpectedConditions.visibilityOf(expandingElementLocator));
-        } catch (WebDriverException e) {
+        } catch (TimeoutException e) {
             return false;
         }
         return true;

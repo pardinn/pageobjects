@@ -1,8 +1,8 @@
 package expanded.pageobjects;
 
 import expanded.objectrepositories.WorkingWithElementsCoursePageObjectRepository;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -19,7 +19,7 @@ public class WorkingWithElementsCoursePage extends BasePage<WorkingWithElementsC
         try {
             WebDriverWait wait = new WebDriverWait(driver, 30);
             wait.until(ExpectedConditions.visibilityOf(objectRepository.expandingElementLocator));
-        } catch (WebDriverException e) {
+        } catch (TimeoutException e) {
             return false;
         }
         return true;
